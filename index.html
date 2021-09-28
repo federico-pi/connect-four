@@ -1,10 +1,13 @@
-<html>
+<html lang="en">
     <head>
-        <meta charset = "UTF-8">
-        <title>Four in a Row with Treehouse</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Connect Four</title>
         <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
-        <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     </head>
+
     <body>
     	<button id = "begin-game">Start</button>
     	<div id = "game-scene">
@@ -29,7 +32,7 @@
                             <rect x = "0" y = "0" height = "472" width = "548" fill = "white">
                         </mask>
                     </defs>
-                    <rect id = "board-back" x="0" y="0" width="548" height="472" mask="url(#mask)" fill-opacity = "1" fill = "#5FCF80"/>
+                    <rect id = "board-back" x="0" y="0" width="548" height="472" mask="url(#mask)" fill-opacity = "1" fill = "#5FCF80">
             	</svg>
                 <div class = "stand-container right">
                     <div class = "stand-leg">
@@ -44,6 +47,7 @@
         </div>
         <div class = "table">
         </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src = "js/Game.js"></script>
@@ -52,6 +56,7 @@
     <script src = "js/Player.js"></script>
     <script src = "js/Token.js"></script>
     <script src = "js/app.js"></script>
+
     </body>
 </html>
 
