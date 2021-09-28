@@ -4,6 +4,7 @@ class Board {
         this.columns = 7;
         this.spaces = this.createSpaces()
     }
+    
     createSpaces() {
         const spaces = [];
         for (let x=0; x < this.columns; x++) {
@@ -15,5 +16,14 @@ class Board {
             spaces.push(column)
         };
         return spaces;
+    }
+
+    drawHTMLBoard() {
+        // this.spaces.forEach(space => space.drawSVGSpace())
+        for (let column of this.spaces) {
+            for (let space of column) {
+                space.drawSVGSpace();
+            }
+        }
     }
 }
